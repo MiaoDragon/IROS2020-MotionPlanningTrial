@@ -1,0 +1,6 @@
+[submodule "ur5"]
+	path = ur5
+	url = https://github.com/utecrobotics/ur5
+[submodule "robotiq"]
+	path = robotiq
+	url = https://github.com/utecrobotics/robotiq
