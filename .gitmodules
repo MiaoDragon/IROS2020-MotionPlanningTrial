@@ -1,0 +1,10 @@
+[submodule "src/universal_robot"]
+	path = src/universal_robot
+	url = https://github.com/ros-industrial/universal_robot
+	branch = melodic-devel
+[submodule "src/robotiq"]
+	path = src/robotiq
+	url = https://github.com/ros-industrial/robotiq
+[submodule "src/ros_canopen"]
+	path = src/ros_canopen
+	url = https://github.com/ros-industrial/ros_canopen

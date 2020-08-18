@@ -40,6 +40,17 @@ RUN pip install pylint
 # Install Catkin
 RUN apt-get install -y ros-melodic-catkin python-catkin-tools
 
+# Install MoveIt!
+RUN apt-get -qq update && apt-get -qq install -y ros-melodic-moveit
+
+
+# robotiq dependencies
+#RUN rosdep install robotiq_modbus_tcp
+RUN apt-get install -y libmuparser-dev
+RUN apt-get install -y ros-melodic-soem
+
+RUN rm -rf /var/lib/apt/lists/*
+
 # Copy some starter models
 RUN mkdir -p /home/ubuntu/.gazebo/
 
